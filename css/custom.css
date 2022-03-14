@@ -50,8 +50,8 @@ button {
 }
 
 .cta-blue {
-    background: #192440;
-    color: #ffffff;
+    background: #ffffff;
+    color: black;
 }
 
 .cta-blue:hover {
@@ -98,11 +98,11 @@ button {
 }
 
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+    background: linear-gradient(168deg, #ffffff 55%, #6e1215 0);
 }
 
 #feature-last {
-    background: #00FFAD;
+    background: #6e1215;
 }
 
 /********** price table **********/
@@ -129,10 +129,6 @@ button {
     padding: 3px 0;
 }
 
-#contact form {
-    color: #00FFAD;
-}
-
 #contact form input,
 #contact form textarea {
     background: transparent;
@@ -142,8 +138,7 @@ button {
 
 /********** copyright **********/
 #copyright {
-    background: #192440;
-    padding: 2rem 3rem;
+    padding: 1rem;
 }
 
 #copyright #social-media a {
@@ -155,13 +150,13 @@ button {
 }
 
 #copyright #social-media a i {
-    color: #192440;
+    color: #6E1215;
     font-size: 1.2rem;
     line-height: 40px;
 }
 
 #copyright #social-media a:hover {
-    background: #00FFAD;
+    background: #6E1215;
 }
 
 #copyright #social-media a:hover i {
@@ -376,6 +371,19 @@ button {
   }
 }
 
+@media (max-width: 650px) {
+  #nissi {
+    display: block;
+    font-size: 80%;
+  }
+  #nissi p {
+    position: relative;
+    margin: -3rem 0 2rem 1rem;
+    padding: 1rem;
+    background: rgba(white, 0.8);
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .main-timeline:before {
       margin: 0;
@@ -424,6 +432,21 @@ button {
   }
 }
 
+#nissi{
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+}
+
+#nissi img {
+  max-width: 100%;
+  height: auto;
+}
 
 .social-link {
   width: 30px;
